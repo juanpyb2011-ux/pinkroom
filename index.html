@@ -88,6 +88,19 @@ font-weight:bold;
 background:#1ebe5d;
 }
 
+.galeria{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.galeria img{
+width:250px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
 footer{
 background: linear-gradient(90deg,#ff69b4,#ffd700);
 color:white;
@@ -108,6 +121,7 @@ margin-top:40px;
 
 <nav>
 <a href="#servicios">Servicios</a>
+<a href="#galeria">Galería</a>
 <a href="#contacto">Contacto</a>
 </nav>
 
@@ -160,7 +174,23 @@ margin-top:40px;
 
 </section>
 
+<section id="galeria">
+
+<h2>Galería</h2>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371">
+<img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc">
+<img src="https://images.unsplash.com/photo-1589710751893-f9a6770ad71b">
+<img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30">
+
+</div>
+
+</section>
+
 <section id="contacto">
+
 <h2>Contacto</h2>
 
 <p>📍 Puebla, México</p>

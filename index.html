@@ -3,72 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Studio Nails</title>
+<title>PinkRoom</title>
 
 <style>
 
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#fff0f5;
+background: linear-gradient(135deg,#ffd1dc,#ffe4ec,#fff0f5);
 color:#333;
 }
 
 header{
-background:#ff69b4;
+background: linear-gradient(90deg,#ff69b4,#ffd700);
 color:white;
 text-align:center;
-padding:40px;
+padding:50px 20px;
 }
 
 header h1{
 margin:0;
-font-size:40px;
+font-size:42px;
+}
+
+header p{
+font-size:18px;
 }
 
 nav{
 background:#ff85c1;
-padding:10px;
+padding:12px;
 text-align:center;
 }
 
 nav a{
 color:white;
-margin:10px;
+margin:15px;
 text-decoration:none;
 font-weight:bold;
+font-size:16px;
+}
+
+nav a:hover{
+text-decoration:underline;
 }
 
 section{
-padding:40px;
+padding:50px 20px;
 text-align:center;
+}
+
+h2{
+font-size:32px;
+margin-bottom:30px;
 }
 
 .servicios{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:20px;
+gap:25px;
 }
 
 .card{
 background:white;
-padding:20px;
-width:200px;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+padding:25px;
+width:220px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-top:0;
 }
 
 .galeria{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:15px;
+gap:20px;
 }
 
 .galeria img{
-width:200px;
-border-radius:10px;
+width:220px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .whatsapp{
@@ -76,17 +95,23 @@ display:inline-block;
 margin-top:20px;
 background:#25D366;
 color:white;
-padding:15px 25px;
-border-radius:8px;
+padding:15px 30px;
+border-radius:10px;
 text-decoration:none;
 font-weight:bold;
+font-size:16px;
+}
+
+.whatsapp:hover{
+background:#1ebe5d;
 }
 
 footer{
-background:#ff69b4;
+background: linear-gradient(90deg,#ff69b4,#ffd700);
 color:white;
-padding:20px;
+padding:25px;
 text-align:center;
+margin-top:40px;
 }
 
 </style>
@@ -95,9 +120,9 @@ text-align:center;
 <body>
 
 <header>
-<h1>Studio Nails</h1>
-<p>Uñas acrílicas • Gel • Diseños personalizados</p>
-<a class="whatsapp" href="https://wa.me/521XXXXXXXXXX">Reservar por WhatsApp</a>
+<h1>PinkRoom</h1>
+<p>Uñas acrílicas • Gelish • Diseños personalizados</p>
+<a class="whatsapp" href="#">Reservar por WhatsApp</a>
 </header>
 
 <nav>
@@ -114,7 +139,7 @@ text-align:center;
 
 <div class="card">
 <h3>Uñas Acrílicas</h3>
-<p>Diseños modernos y duraderos.</p>
+<p>Diseños elegantes y duraderos para cualquier ocasión.</p>
 </div>
 
 <div class="card">
@@ -144,9 +169,9 @@ text-align:center;
 <section id="precios">
 <h2>Precios</h2>
 
-<p>Uñas acrílicas desde $250</p>
-<p>Gelish desde $150</p>
-<p>Diseños especiales desde $50</p>
+<p>Uñas acrílicas desde <b>$250</b></p>
+<p>Gelish desde <b>$150</b></p>
+<p>Diseños especiales desde <b>$50</b></p>
 
 </section>
 
@@ -154,14 +179,14 @@ text-align:center;
 <h2>Contacto</h2>
 
 <p>📍 Puebla, México</p>
-<p>📱 WhatsApp para citas</p>
+<p>📱 Agenda tu cita por WhatsApp</p>
 
-<a class="whatsapp" href="https://wa.me/521XXXXXXXXXX">Agendar cita</a>
+<a class="whatsapp" href="#">Agendar cita</a>
 
 </section>
 
 <footer>
-<p>© 2026 Studio Nails</p>
+<p>© 2026 PinkRoom - Todos los derechos reservados</p>
 </footer>
 
 </body>

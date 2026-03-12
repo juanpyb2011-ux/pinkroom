@@ -26,10 +26,6 @@ margin:0;
 font-size:42px;
 }
 
-header p{
-font-size:18px;
-}
-
 nav{
 background:#ff85c1;
 padding:12px;
@@ -41,11 +37,6 @@ color:white;
 margin:15px;
 text-decoration:none;
 font-weight:bold;
-font-size:16px;
-}
-
-nav a:hover{
-text-decoration:underline;
 }
 
 section{
@@ -59,22 +50,27 @@ margin-bottom:30px;
 }
 
 .servicios{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
+max-width:900px;
+margin:auto;
 }
 
 .card{
 background:white;
 padding:25px;
-width:220px;
 border-radius:12px;
 box-shadow:0 6px 15px rgba(0,0,0,0.1);
 }
 
 .card h3{
 margin-top:0;
+color:#ff4da6;
+}
+
+.card p{
+margin:6px 0;
 }
 
 .galeria{
@@ -99,11 +95,6 @@ padding:15px 30px;
 border-radius:10px;
 text-decoration:none;
 font-weight:bold;
-font-size:16px;
-}
-
-.whatsapp:hover{
-background:#1ebe5d;
 }
 
 footer{
@@ -121,14 +112,13 @@ margin-top:40px;
 
 <header>
 <h1>PinkRoom</h1>
-<p>Uñas acrílicas • Gelish • Diseños personalizados</p>
+<p>Centro de belleza y estética</p>
 <a class="whatsapp" href="#">Reservar por WhatsApp</a>
 </header>
 
 <nav>
 <a href="#servicios">Servicios</a>
 <a href="#galeria">Galería</a>
-<a href="#precios">Precios</a>
 <a href="#contacto">Contacto</a>
 </nav>
 
@@ -138,21 +128,43 @@ margin-top:40px;
 <div class="servicios">
 
 <div class="card">
-<h3>Uñas Acrílicas</h3>
-<p>Diseños elegantes y duraderos para cualquier ocasión.</p>
+<h3>Uñas</h3>
+<p>Uñas Acrílicas</p>
+<p>Rubber - vitamina</p>
+<p>Soft-Gel - Gelish</p>
+<p>Manicura y Pedicura</p>
+<p>Spa</p>
 </div>
 
 <div class="card">
-<h3>Gelish</h3>
-<p>Color brillante con larga duración.</p>
+<h3>Pestañas y Cejas</h3>
+<p>Cejas</p>
+<p>HD - Lash Lifting</p>
+<p>Extensión de pestañas</p>
+<p>Depilación</p>
 </div>
 
 <div class="card">
-<h3>Diseños personalizados</h3>
-<p>Arte único para tus uñas.</p>
+<h3>Tratamientos Capilares</h3>
+<p>Keratinas</p>
+<p>Nanoplastia</p>
+<p>Alaciado japonés</p>
+<p>Botox capilar</p>
+</div>
+
+<div class="card">
+<h3>Estilismo</h3>
+<p>Cortes de cabello</p>
+<p>Tintes</p>
+<p>Efectos de color</p>
+<p>Balayage</p>
+<p>Peinado</p>
+<p>Planchado</p>
+<p>Maquillaje</p>
 </div>
 
 </div>
+
 </section>
 
 <section id="galeria">
@@ -166,20 +178,11 @@ margin-top:40px;
 
 </section>
 
-<section id="precios">
-<h2>Precios</h2>
-
-<p>Uñas acrílicas desde <b>$250</b></p>
-<p>Gelish desde <b>$150</b></p>
-<p>Diseños especiales desde <b>$50</b></p>
-
-</section>
-
 <section id="contacto">
 <h2>Contacto</h2>
 
 <p>📍 Puebla, México</p>
-<p>📱 Agenda tu cita por WhatsApp</p>
+<p>Agenda tu cita por WhatsApp</p>
 
 <a class="whatsapp" href="#">Agendar cita</a>
 

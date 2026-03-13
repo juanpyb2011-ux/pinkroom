@@ -235,10 +235,65 @@ box-shadow:0 6px 15px rgba(0,0,0,0.3);
 
 <h2>Contacto</h2>
 
-<p class="contacto">📍 Puebla, México</p>
-<p class="contacto">Agenda tu cita por WhatsApp</p>
+<p>Déjanos tus datos y agenda tu cita.</p>
 
-<a class="boton" href="https://wa.me/522226715268">Agendar cita</a>
+<form onsubmit="enviarWhatsApp(); return false;" style="max-width:500px;margin:auto;text-align:left">
+
+<label>Nombre</label>
+<input id="nombre" type="text" placeholder="Tu nombre" required
+style="width:100%;padding:10px;margin:10px 0;border-radius:6px;border:1px solid #ccc">
+
+<label>Teléfono</label>
+<input id="telefono" type="tel" placeholder="Tu número" required
+style="width:100%;padding:10px;margin:10px 0;border-radius:6px;border:1px solid #ccc">
+
+<label>Servicio</label>
+<select id="servicio"
+style="width:100%;padding:10px;margin:10px 0;border-radius:6px;border:1px solid #ccc">
+
+<option>Uñas</option>
+<option>Pestañas</option>
+<option>Cejas</option>
+<option>Tratamiento capilar</option>
+<option>Estilismo</option>
+
+</select>
+
+<label>Mensaje</label>
+<textarea id="mensaje" placeholder="Escribe tu mensaje"
+style="width:100%;padding:10px;margin:10px 0;border-radius:6px;border:1px solid #ccc"></textarea>
+
+<button type="submit"
+style="background:#ff4da6;color:white;padding:12px 20px;border:none;border-radius:8px;font-weight:bold">
+Enviar por WhatsApp
+</button>
+
+</form>
+
+</section>
+
+<script>
+
+function enviarWhatsApp(){
+
+var nombre=document.getElementById("nombre").value;
+var telefono=document.getElementById("telefono").value;
+var servicio=document.getElementById("servicio").value;
+var mensaje=document.getElementById("mensaje").value;
+
+var texto="Hola, quiero agendar una cita.%0A"+
+"Nombre: "+nombre+"%0A"+
+"Telefono: "+telefono+"%0A"+
+"Servicio: "+servicio+"%0A"+
+"Mensaje: "+mensaje;
+
+var url="https://wa.me/522226715268?text="+texto;
+
+window.open(url,"_blank");
+
+}
+
+</script>
 
 </section>
 
